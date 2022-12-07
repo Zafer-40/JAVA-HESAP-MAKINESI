@@ -1,0 +1,27 @@
+        int n1, n2, select ;
+
+        Scanner input = new Scanner(System.in);
+        System.out.print("ilk sayiyi giriniz :");
+        n1 = input.nextInt();
+        System.out.print("ikinci sayiyi giriniz :");
+        n2 = input.nextInt();
+
+        System.out.println("1-Toplama\n2-Cikartma\n3-Carpma\n4-Bolme");
+        System.out.print("Seciminiz :");
+        select = input.nextInt();
+
+        switch (select){
+            case 1:
+                System.out.print("Toplam :" + (n1+n2));
+                break;
+            case 2:
+                System.out.print("Cikartma :" + (n1-n2));
+                break;
+            case 3:
+                System.out.print("Carpim :" + (n1*n2));
+                break;
+            case 4:
+                System.out.print("Bolum :" + (n2==0 ?"Bir sayi sifir ile bolunemez" :(n1/n2)));
+                break;
+            default:
+                System.out.print("Hatali Giris Yaptiniz. Tekrar deneyiniz");
